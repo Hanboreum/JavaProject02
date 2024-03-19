@@ -18,9 +18,9 @@ public class BookSearchMain {
                for(Book book : books) {
                    System.out.println(book);
                }
-               //String fileName = "도서목록.pdf";
-              //PdfGenerator.generateBookListPdf(books, fileName);
-               //System.out.println(fileName + "파일이 생성되었습니다");
+               String fileName = "도서목록.pdf";
+              PdfGenerator.generateBookListPdf(books, fileName);
+               System.out.println(fileName + "파일이 생성되었습니다");
            }
        }catch (IOException e){
            System.out.println("에러가 발생했습니다" + e.getMessage());
